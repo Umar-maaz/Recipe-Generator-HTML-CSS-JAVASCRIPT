@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png"> <!-- Favicon for the website -->
+    <title>Recipe Website - Get All Recipes on one Click</title> <!-- Page title displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to an external CSS stylesheet for styling -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="recipeName" placeholder="Type the Name of Dish Here..."> <!-- Input field for recipe search -->
+            <button onclick="generate()">Search</button> <!-- Button to trigger the recipe search -->
+        </div>
+        <div id="result"></div> <!-- Placeholder for displaying recipe search results -->
+        <div id="none"
+            style="background-color: rgba(255, 0, 0, 0.5); margin-top: 20px; padding: 10px; border-radius: 10px; color: white; text-align: center; display: none">
+            Input Field Can't Be Empty</div> <!-- Error message for empty input field -->
+        <div id="not"
+            style="background-color: rgba(100, 200, 100, 0.5); margin-top: 20px; padding: 10px; border-radius: 10px; color: white; text-align: center; display: none">
+            Can't fetch this Recipe</div> <!-- Error message for unsuccessful recipe fetch -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
